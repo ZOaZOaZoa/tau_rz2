@@ -20,16 +20,20 @@
 %Нормальные дроби через запятую
 \usepackage{ncccomma}
 
+\newcommand{\changefont}{%
+	\fontsize{12}{11}\selectfont
+}
+
 %Заголовки
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
 %\renewcommand{\sectionmark}[1]{\markright{#1}}
-\fancyhead[L]{\rightmark}
-\fancyhead[R]{\leftmark}
-\newcommand{\ssubsection}[1]{\subsection*{#1}
-	\addcontentsline{toc}{subsection}{#1}
-	\markright{#1}{}}
+\fancyhead[R]{\changefont \slshape \leftmark}
+\fancyhead[L]{\changefont \slshape \rightmark}
+%\newcommand{\ssubsection}[1]{\subsection*{#1}
+%	\addcontentsline{toc}{subsection}{#1}
+%	\markright{#1}{}}
 \cfoot{\thepage}
 
 %\полуторный интервал
@@ -37,6 +41,7 @@
 \setlength{\parindent}{1.25cm}
 
 \usepackage{amsmath, amsfonts, mathtools}
+\usepackage{physics}
 \usepackage{indentfirst}
 \usepackage{xcolor}
 \usepackage{alltt}

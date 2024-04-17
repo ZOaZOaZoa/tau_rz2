@@ -19,12 +19,12 @@
 	\end{align*}
 	
 	\begin{figure}[h]
-		\centering\includegraphics[width=.8\textwidth]{схема.png}
+		\centering\includegraphics[width=.8\textwidth]{png/схема.png}
 		\caption{Структурная схема нелинейной системы}
 		\label{scheme}
 	\end{figure}
 	\begin{figure}[h]
-		\centering\includegraphics[width=.4\textwidth]{НЭ.png}
+		\centering\includegraphics[width=.4\textwidth]{png/НЭ.png}
 		\caption{Характеристика НЭ вида двухпозиционное реле с гистерезисом}
 		\label{NE}
 	\end{figure}
@@ -51,8 +51,94 @@
 		\item Сравнить количественно результаты исследования автоколебаний методом фазовой плоскости в п. 2, 3, 4 и методом Гольдфарба в п. 5.
 	\end{enumerate}
 	
-	\section{Исследование методом фазовой плоскости}
+	\section[Метод фазовой плоскости]{Исследование методом фазовой плоскости}
 	\subsection{Получение фазового портрета системы}
 	
+	Составим уравнения системы в изображениях Лапласа:
+	\begin{equation*}
+		\begin{cases}
+			X(p) = W_1(p)W_2(p)Z(p) = \dfrac{0,4}{p^2+3p+9}Z(p) \\
+			Y(p) = W_3(p)X(p) = 3p\cdot X(p) \\
+			Z(p) = \varphi(Y(p)-X(p)) = \varphi((3p-1)X(p))
+		\end{cases}	
+	\end{equation*}
+	
+	Переходя к оригиналам, получаем:
+	\begin{equation}
+		\begin{cases}
+			x''(t) + 3x'(t) + 9x(t) = 0,4z(t) \\
+			y(t) = 3x'(t) \\
+			z(t) = \varphi(3x'(t) - x(t))
+		\end{cases} \Rightarrow x''+3x'+9x = 0,4\varphi(3x'-x)
+		\label{sys_equation}
+	\end{equation}
+
+	Аналитически выражение для НЭ задаются следующим образом:
+	\begin{equation*}
+		z(t) = \varphi(y) = \begin{cases}
+			8, &y\geq 9 \\
+			8, &-9\geq y \geq 9,\;(z^{-} = 8) \\
+			-8, &-9 \geq y \geq 9,\;(z^{-}=-8) \\ 
+			-8, &y \leq -9
+		\end{cases},\;\text{где } z^{-} = \lim_{\xi\to 0}z(t-\xi)
+	\end{equation*}
+	
+	Перейдём к представлению системы в переменных состояния сделав замену $x'(t) = v(t)$:
+	\begin{equation}
+		\begin{cases}
+			\dv{x}{t} = v \\
+			\dv{v}{t} = \begin{cases}
+				3,2-3v-9x, &3v-x\geq 9 \\
+				3,2-3v-9x, &-9\geq 3v-x \geq 9,\;(z^{-} = 8) \\
+				-3,2-3v-9x, &-9 \geq 3v-x \geq 9,\;(z^{-} = -8) \\ 
+				-3,2-3v-9x, &3v-x \leq -9
+			\end{cases}
+		\end{cases}
+		\label{sys_equations}
+	\end{equation}
+	
+	Отсюда полупрямые переключения будут следующие:
+	\begin{equation}
+		\left[\begin{aligned}
+			&3v-x = 9,\,v\geq 0 \\
+			&3v-x = -9,\,v\leq 0 
+		\end{aligned}\right.
+		\label{perekl}
+	\end{equation}
+	
+	Исследуем характер фазовых траекторий для произвольного значения $z(t) = C$. Рассмотрим уравнение (\ref{sys_equation}):
+	\begin{equation}
+		x''+3x'+9x = C \Rightarrow x'' + 3x' + 9\left(x-\frac{C}{9}\right) = 0
+		\label{obsh_ur}
+	\end{equation}
+	 
+	Уравнение (\ref{obsh_ur}) представляет собой сдвинутые по $x$ на $\frac{C}{9}$ вправо фазовые траектории линейной системы, заданной следующим характеристическим уравнением (ХУ):
+	\begin{equation*}
+		p^2 + 3p + 9 = 0 \Rightarrow p_{1,\,2} = \frac{-3\pm\sqrt{3^2 - 4\cdot9}}{2} = -\frac{3}{2} \pm j\frac{3\sqrt{3}}{2}
+	\end{equation*}
+	
+	Такие корни ХУ соответствуют особой точке типа устойчивый фокус. Переходной процесс будет иметь следующий вид:
+	\begin{equation*}
+		x(t) = \frac{C}{9} + Ae^{-\frac{3}{2}t}\sin(\frac{3\sqrt{3}}{2}t + \theta)
+	\end{equation*}
+	Здесь значения $A,\,\theta$ зависят от начальных условий.
+	
+	НЭ в рассматриваемой системе может принимать 2 значения, поэтому будет два типа фазовых траекторий. 
+	
+	Пусть $z(t) = 8$ задаёт траектории I типа. Из (\ref{obsh_ur}) видно, что для этого случая $C=8$. Тогда $z(t) = -8$ задаёт траектории II типа и $C = -8$.
+	
+	Нарисуем качественно вид траекторий. Учитывая сдвиг по оси $x$ на $\dfrac{C}{9}$, особыми точками будут  $\left(\dfrac{8}{9},\,0\right)$ и $\left(-\dfrac{8}{9},\,0\right)$ для I и II типа фазовых траекторий соответственно. Полученные траектории показаны на рис. \ref{tracks}.
+	
+	
+	\noindent\begin{minipage}{.5\textwidth}
+		\includegraphics[width=\textwidth]{png/траектории1.png}
+		\centering I тип
+	\end{minipage}
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[width=\textwidth]{png/траектории2.png}
+		\centering II тип
+	\end{minipage}
+	\captionof{figure}{Фазовые траектории I и II типов}
+	\label{tracks}
 
 \end{document}
