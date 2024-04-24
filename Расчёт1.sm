@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio настольная" version="1.1.8763.0"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="144">
+    <identity>
+      <id>a66bf820-30ba-49f8-b00b-8be4d73e3f8d</id>
+      <revision>3</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio настольная" version="1.1.8763.0" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8763.0" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="SpecialFunctions" version="1.12.8763.0" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="PlotRegion" version="1.11.8763.0" guid="c451c2b5-798b-4f08-b9ec-b90963d1ddaa" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="36" top="27" width="306" height="54" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="function" args="1">a</e>
+          <e type="operand">16</e>
+          <e type="operand">π</e>
+          <e type="operand">A</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">A</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">2.1</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operand">A</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">1.5</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="351" top="27" width="117" height="50" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="function" args="1">b</e>
+          <e type="operand">9.6</e>
+          <e type="operand">π</e>
+          <e type="operand">A</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="486" top="45" width="171" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="function" args="1">z</e>
+          <e type="operand">1</e>
+          <e type="operand">A</e>
+          <e type="function" args="1">a</e>
+          <e type="operand">i</e>
+          <e type="operand">A</e>
+          <e type="function" args="1">b</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="45" top="99" width="303" height="50" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ω</e>
+          <e type="function" args="1">W_lch</e>
+          <e type="operand">2</e>
+          <e type="operand">ω</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">3</e>
+          <e type="operand">i</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">ω</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">9</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="operand">i</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">ω</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="180" width="150" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ω</e>
+          <e type="operand">3</e>
+          <e type="operand">3.15</e>
+          <e type="operand">3.01</e>
+          <e type="function" args="3">range</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="243" top="180" width="158" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">19</e>
+          <e type="operand">20.3</e>
+          <e type="operand">19.1</e>
+          <e type="function" args="3">range</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="225" width="162" height="28" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ω</e>
+          <e type="function" args="1">x</e>
+          <e type="operand">ω</e>
+          <e type="function" args="1">W_lch</e>
+          <e type="function" args="1">Re</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="225" top="225" width="162" height="28" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ω</e>
+          <e type="function" args="1">y</e>
+          <e type="operand">ω</e>
+          <e type="function" args="1">W_lch</e>
+          <e type="function" args="1">Im</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="423" top="225" width="151" height="28" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="function" args="1">x1</e>
+          <e type="operand">A</e>
+          <e type="function" args="1">z</e>
+          <e type="operator" args="1">-</e>
+          <e type="function" args="1">Re</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="225" width="151" height="28" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="function" args="1">y1</e>
+          <e type="operand">A</e>
+          <e type="function" args="1">z</e>
+          <e type="operator" args="1">-</e>
+          <e type="function" args="1">Im</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="270" width="274" height="34" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="function" args="1">AFCH_lch</e>
+          <e type="operand">ω</e>
+          <e type="function" args="1">x</e>
+          <e type="function" args="1">vectorize</e>
+          <e type="operand">ω</e>
+          <e type="function" args="1">y</e>
+          <e type="function" args="1">vectorize</e>
+          <e type="function" args="2">augment</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="387" top="270" width="266" height="34" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="function" args="1">Ch_NE</e>
+          <e type="operand">A</e>
+          <e type="function" args="1">x1</e>
+          <e type="function" args="1">vectorize</e>
+          <e type="operand">A</e>
+          <e type="function" args="1">y1</e>
+          <e type="function" args="1">vectorize</e>
+          <e type="function" args="2">augment</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="99" top="360" width="560" height="301" color="#000000" fontSize="10">
+      <plot type="2d" render="lines" scale_x="8.79275725949989" scale_y="8.97128584787266" scale_z="0" rotate_x="0" rotate_y="0" rotate_z="0" transpose_x="43" transpose_y="25" transpose_z="0" animate="A" frameRate="20">
+        <description active="false" position="Top" lang="eng">
+          <content></content>
+        </description>
+        <input>
+          <e type="operand">x</e>
+          <e type="function" args="1">AFCH_lch</e>
+          <e type="operand">x</e>
+          <e type="function" args="1">Ch_NE</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">sys</e>
+        </input>
+      </plot>
+    </region>
+  </regions>
+</worksheet>
